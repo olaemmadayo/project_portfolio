@@ -1,0 +1,26 @@
+/* Expenses.css additions */
+.delete-button {
+  background: none;
+  border: none;
+  color: #ff4444;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.delete-button:hover {
+  color: #cc0000;
+}
+
+.clear-all-button {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.clear-all-button:hover {
+  background-color: #cc0000;
+}
