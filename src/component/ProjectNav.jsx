@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/projectNav.css"
 import { FaCalculator, FaClock, FaPuzzlePiece, FaSign, FaWeight } from 'react-icons/fa';
-
+import techLogo from "../assets/images/olaemmadayo tech.png"
 
 
 
@@ -11,7 +11,9 @@ const ProjectNav = () => {
     <div className='project--nav'>
       
       <div className="nav-heading">
-        <h3 className='heading-font'>MY Projects</h3>
+        <img className="techlogo" src={techLogo} alt="" />
+        <h3 className='heading-font'>Projects</h3>
+        
       </div>
 
       <div className="project-links">

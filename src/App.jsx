@@ -22,7 +22,13 @@ const App = () => {
           <div className='project--c'>
            
             <Routes>
-              <Route path="todo-list" element={<TodoList/>} />
+            <Route path="/" element={
+              <>
+                <ProjectNav/>
+              
+              </>
+            } />
+              <Route path="/todo-list" element={<TodoList/>} />
               <Route path="color-picker" element={<ColorPicker/>} />
               <Route path="counter" element={<Counter/>} />
               <Route path="digital-time" element={<DigitalClock/>} />
