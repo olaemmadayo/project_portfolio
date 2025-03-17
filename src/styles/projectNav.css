@@ -66,9 +66,9 @@ body{
 @media only screen and (max-width: 480px) {
   .project--nav {
     padding: 2px 5px;
-    border: 2px solid green;
     width: 100%;
     display: flex; 
+    height: auto;
   }
 
   .nav-heading {

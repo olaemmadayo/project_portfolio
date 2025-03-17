@@ -33,16 +33,14 @@
     flex-direction: column; /* Change to column layout for smaller screens */
   }
   .nav--c{
-    border: 3px solid black;
     display: flex;
     width: auto;
-    height: 20vh;
+    height: auto;
   }
 
   .project--c {
     height: auto; /* Change to auto height for smaller screens */
     padding: 5px 10px; /* Reduce padding for smaller screens */
-    border: 1px solid blue;
     width: 100% ;
   }
 
