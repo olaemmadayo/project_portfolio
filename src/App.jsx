@@ -9,6 +9,7 @@ import DigitalClock from './component/DigitalClock';
 import WindowResize from './component/WindowResize';
 import StopWatch from './component/Stopwatch';
 import Converter from './component/Converter';
+import WelcomePage from './component/WelcomePage';
 
 const App = () => {
   return (
@@ -20,9 +21,9 @@ const App = () => {
         </div>
           
           <div className='project--c'>
-           
+          
             <Routes>
-              <Route path="/" element={<TodoList/>} />
+              <Route path="/" element={<WelcomePage/>} />
               <Route path="/todo-list" element={<TodoList/>} />
               <Route path="color-picker" element={<ColorPicker/>} />
               <Route path="counter" element={<Counter/>} />

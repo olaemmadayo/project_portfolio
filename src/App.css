@@ -1,6 +1,6 @@
 .dashboard{
   /* flex: 1; */
-  border: 1px solid blue;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,4 +15,35 @@
   width: 80%;
   padding: 10px 20px;
   
+}
+/* Mobile Responsiveness */
+
+@media only screen and (min-width: 768px) {
+  .nav--c {
+    width: 20%; /* Reset to original width for larger screens */
+  }
+
+  .project--c {
+    width: 80%; /* Reset to original width for larger screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .dashboard {
+    flex-direction: column; /* Change to column layout for smaller screens */
+  }
+  .nav--c{
+    border: 3px solid black;
+    display: flex;
+    width: auto;
+    height: 20vh;
+  }
+
+  .project--c {
+    height: auto; /* Change to auto height for smaller screens */
+    padding: 5px 10px; /* Reduce padding for smaller screens */
+    border: 1px solid blue;
+    width: 100% ;
+  }
+
 }

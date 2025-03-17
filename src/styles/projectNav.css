@@ -15,15 +15,21 @@ body{
   justify-content: space-between;
   align-content: center;
   margin-top: 20px;
-  gap: 10px;
+  gap: 20px;
 }
 .heading-font{
   color: hsla(350, 92%, 14%, 0.877);
   font-size: 1.8rem;
   font-weight: bold;
   align-items: center;
+  
   /* margin-top: 10px; */
 }
+.heading-font .link{
+  text-decoration: none;
+  color: #333;
+}
+
 .techlogo{
   width: 50px;
   height: 35px;
@@ -44,15 +50,60 @@ body{
    min-width: 125px;
    border: none;
    color: white;
-   border-radius: 10px;
+   border-radius: 5px;
    cursor: pointer;
    transition: background-color 0.7s ease;
    text-decoration: none;
 
 }
 .item{
-  background-color: hsl(115, 100%, 40%);
+  background-color: hsl(210, 100%, 50%);
 }
 .item:hover{
-  background-color: hsl(115, 100%, 35%);
+  background-color: hsl(210, 100%, 40%);
 }
+
+@media only screen and (max-width: 480px) {
+  .project--nav {
+    padding: 2px 5px;
+    border: 2px solid green;
+    width: 100%;
+    display: flex; 
+  }
+
+  .nav-heading {
+    gap: 5px;
+  }
+
+  .heading-font {
+    font-size: 1.2rem;
+  }
+
+  .techlogo {
+    width: 20px;
+    height: 15px;
+  }
+
+  .project-links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row; /* Change to row layout */
+    flex-wrap: wrap; /* Allow links to wrap to next line */
+    gap: 10px; /* Add gap between links */
+  }
+
+
+  .project-links .item {
+    font-size: 1rem;
+    padding: 2px 4px;
+    min-width:70px;
+    
+    
+   
+  
+    /* min-width: 80px; */
+
+  }
+
+}
+
