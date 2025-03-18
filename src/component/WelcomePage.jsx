@@ -23,7 +23,7 @@ const WelcomePage = () => {
         <p>Passionate about creating efficient and scalable front-end solutions.</p>
         <div className="button-group">
           <button className="cta-button" ><Link to="/todo-list" className='view-project'>View My Projects</Link></button>
-          <button className="cta-button" ><a href={pdfFile} download="Front-endR.pdf">Download My Resume</a>
+          <button className="cta-button" ><a  className="cta-button-a" href={pdfFile} download="Front-endR.pdf">Download My Resume</a>
           </button>
           <a href="your_linkedin_profile_url" target="_blank" rel="noopener noreferrer">
             <button className="cta-button">Connect on LinkedIn</button>
