@@ -15,7 +15,7 @@ const WelcomePage = () => {
   return (
     <div className="welcome-container">
       <h2 className='welcome--text'>
-        Explore my portfolio to discover how I leverage my skills to build responsive, scalable, and maintainable web applications. Let's collaborate to bring your vision to life!
+        My name is OLATOYE EMMANUEL TEMIDAYO and i will like you to explore my portfolio to discover how I leverage my skills to build responsive, scalable, and maintainable web applications. Let's collaborate to bring your vision to life!
       </h2>
       <div className="hero-section">
         
