@@ -5,8 +5,10 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  width: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f4f4f4;  
 }
 .color-display{
   width: 200px;

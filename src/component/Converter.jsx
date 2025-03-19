@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "../styles/coverter.css"
 
 
 const Converter = () => {
@@ -38,6 +39,7 @@ const Converter = () => {
 
         <input placeholder='Enter Celsius or Farenheight (C or F) ' type="text" value={unit} onChange={handleUnitCchange}/>
         <p>Unit Value: {unit}</p>
+        <p className='result'>Result: {newTemp}</p>
 
       </div>
      
