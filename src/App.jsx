@@ -10,6 +10,7 @@ import WindowResize from './component/WindowResize';
 import StopWatch from './component/Stopwatch';
 import Converter from './component/Converter';
 import WelcomePage from './component/WelcomePage';
+import OnchangeElement from './component/OnchangeElement';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
               <Route path="window-resize" element={<WindowResize/>} />
               <Route path="stop-watch" element={<StopWatch/>} />
               <Route path="converter" element={<Converter/>} />
+              <Route path="onchange" element={<OnchangeElement/>} />
 
             </Routes>
           </div>

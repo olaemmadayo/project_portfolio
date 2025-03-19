@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import "../styles/OnchangeElement.css"
 
 function OnchangeElement(){
   const [name, setName] = useState("Guest");
@@ -24,18 +25,20 @@ function OnchangeElement(){
   }
 
   return (
-    <div>
+    <div className='form--page'>
+
+      <h1>FORM</h1>
       
-      <input value={name} onChange={handleNameChange} />
+      <input className='form--input' value={name} onChange={handleNameChange} />
       <p>Name: {name} </p>
 
-      <input value={quantity} onChange={handleQuantityChange} type="number"/>
+      <input className='form--input' value={quantity} onChange={handleQuantityChange} type="number"/>
       <p>Name: {quantity} </p>
 
-      <textarea value={comment} onChange={handleCommentChange} placeholder='Delivery instruction' />
+      <textarea className='form--input' value={comment} onChange={handleCommentChange} placeholder='Delivery instruction' />
       <p>Delivery Instructions: {comment} </p>
 
-      <select value={payment} onChange={handlePaymentChange}>
+      <select className='form-select' value={payment} onChange={handlePaymentChange}>
         <option value="">Select payment option</option>
         <option value="Visa">Visa</option>
         <option value="Master">Master</option>
@@ -44,14 +47,14 @@ function OnchangeElement(){
       </select>
       <p>Payment: {payment}</p>
 
-      <label>
-          <input type="radio" value="Pick Up" 
+      <label className="form--label--input" >
+          <input  type="radio" value="Pick Up" 
                   checked={shipping === "Pick Up"}
                   onChange={handleShippingChange}/>
           Pick Up
       </label> <br />
-      <label>
-          <input type="radio" value="Delivery" 
+      <label className="form--label--input">
+          <input className="form--label--input" type="radio" value="Delivery" 
                   checked={shipping === "Delivery"}
                   onChange={handleShippingChange}/>
           Delivery
