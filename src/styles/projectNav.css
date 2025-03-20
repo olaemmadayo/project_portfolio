@@ -18,16 +18,21 @@ body{
   gap: 20px;
 }
 .heading-font{
-  color: hsla(350, 92%, 14%, 0.877);
+  color: #06582f;
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 700;
   align-items: center;
+
   
   /* margin-top: 10px; */
 }
+
 .heading-font .link{
   text-decoration: none;
-  color: #333;
+  color: #030a4b;
+}
+.heading-font .link:hover{
+  color: #053dd6;
 }
 
 .techlogo{

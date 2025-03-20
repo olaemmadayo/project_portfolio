@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/projectNav.css"
-import { FaCalculator, FaClock, FaPen, FaPuzzlePiece, FaWeight } from 'react-icons/fa';
+import { FaCalculator, FaClock, FaPassport, FaPen, FaPuzzlePiece, FaWeight } from 'react-icons/fa';
 import techLogo from "../assets/images/olaemmadayo tech.png";
 import { FaScaleBalanced } from 'react-icons/fa6';
 
@@ -50,6 +50,10 @@ const ProjectNav = () => {
         <Link to="/onchange" className='item'>
         <FaPen className="fa-icon"/>
           Form
+        </Link>
+        <Link to="/card-page" className='item'>
+        <FaPassport className="fa-icon"/>
+          Card
         </Link>
 
 

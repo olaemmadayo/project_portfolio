@@ -11,6 +11,7 @@ import StopWatch from './component/Stopwatch';
 import Converter from './component/Converter';
 import WelcomePage from './component/WelcomePage';
 import OnchangeElement from './component/OnchangeElement';
+import CardPage from './component/CardPage';
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
               <Route path="stop-watch" element={<StopWatch/>} />
               <Route path="converter" element={<Converter/>} />
               <Route path="onchange" element={<OnchangeElement/>} />
+              <Route path="card-page" element={<CardPage/>} />
 
             </Routes>
           </div>
