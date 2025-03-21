@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import "../styles/onchangeElement.css"
+import "../styles/onChangeElement.css"
 
 function OnchangeElement(){
   const [name, setName] = useState("Guest");
