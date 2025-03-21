@@ -1,9 +1,10 @@
 import React from 'react'
-import Cards from '../component/Cards';
+import Cards from './Cards';
 import myPhoto from "../assets/images/photo-me.jpg";
 import "../styles/cardPage.css";
 
-const cardPage = () => {
+const CardPage = () => {
+  
   return (
     <div className='card--page'>
       <Cards
@@ -22,4 +23,4 @@ const cardPage = () => {
   )
 }
 
-export default cardPage
+export default CardPage
