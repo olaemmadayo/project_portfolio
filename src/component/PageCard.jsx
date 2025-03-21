@@ -3,7 +3,7 @@ import Cards from './Cards';
 import myPhoto from "../assets/images/photo-me.jpg";
 import "../styles/cardPage.css";
 
-const CardPage = () => {
+const PageCard = () => {
   
   return (
     <div className='card--page'>
@@ -23,4 +23,4 @@ const CardPage = () => {
   )
 }
 
-export default CardPage
+export default PageCard
