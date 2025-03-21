@@ -5,15 +5,16 @@
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  background-color: #f4f4f4; /* Light background */
+  background-color: #f4f4f4;
 }
-.welcome--text{
+
+.welcome--text {
   font-size: 1.3rem;
   margin-bottom: 3rem;
   color: #666;
   padding: 10px 20px;
-  
 }
+
 .hero-section {
   padding: 2rem;
   max-width: 800px;
@@ -48,14 +49,17 @@
   font-size: 1rem;
   text-decoration: none;
 }
-.cta-button .cta-button-a{
+
+.cta-button a { /* ✅ Fixed selector */
   text-decoration: none;
   color: white;
 }
+
 .cta-button:hover {
   background-color: #0056b3;
 }
-.view-project{
+
+.view-project {
   text-decoration: none;
   color: #f4f4f4;
 }
@@ -65,68 +69,60 @@
   margin: 0 1rem;
   color: #555;
 }
-.footer-rap{
+
+.footer-rap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:30px
+  gap: 30px;
 }
-.email{
+
+.email,
+.contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
   color: #555;
 }
-.contact{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  color: #555;
-}
-@media only screen and (max-width: 768px) {
-  .hero-section {
-    padding: 1rem;
-  }
 
-  .hero-section h1 {
-    font-size: 2rem;
-  }
-
-  .hero-section p {
+@media only screen and (max-width: 480px) {
+  .welcome--text {
     font-size: 1rem;
   }
-
-  .button-group {
-    flex-direction: column;
+  .hero-section h1 {
+    font-size: 1.5rem;
   }
-
+  .hero-section p {
+    font-size: 0.8rem;
+  }
   .cta-button {
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.5rem;
   }
-
   .footer-rap {
     flex-direction: column;
     gap: 10px;
   }
 }
 
-
-@media only screen and (max-width: 480px) {
-  .welcome--text {
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    padding: 1rem;
+  }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
     font-size: 1rem;
   }
-
-  .hero-section h1 {
-    font-size: 1.5rem;
+  .button-group {
+    flex-direction: column;
   }
-
-  .hero-section p {
-    font-size: 0.8rem;
-  }
-
   .cta-button {
-    padding: 0.2rem 0.5rem;
-  }
+    padding: 0.5rem 1rem;
+  }
+  .footer-rap {
+    flex-direction: column;
+    gap: 10px; /* ✅ Fixed space issue */
+  }
 }
