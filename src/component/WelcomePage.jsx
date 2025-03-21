@@ -25,14 +25,14 @@ const WelcomePage = () => {
           <button className="cta-button" ><Link to="/todo-list" className='view-project'>View My Projects</Link></button>
           <button className="cta-button" ><a  className="cta-button-a" href={pdfFile} download="Front-endR.pdf">Download My Resume</a>
           </button>
-          <a href="your_linkedin_profile_url" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/olatoye-emmanuel-temidayo-883673151" target="_blank" rel="noopener noreferrer">
             <button className="cta-button">Connect on LinkedIn</button>
           </a>
         </div>
         <div className="tech-icons">
           <i className="fab fa-react"><FaReact/></i>
           <i className="fab fa-html5"><FaHtml5/></i>
-          <i className="fab fa-css3-alt"><FaCss3/></i>
+          <i className="fab fa-css3-alt"><FaCss3/></i> 
           <i className="fab fa-js-square"><FaJsSquare/></i>
         </div>
       </div >
