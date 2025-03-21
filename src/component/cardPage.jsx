@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from "../component/Cards";
+import Cards from '../component/Cards';
 import myPhoto from "../assets/images/photo-me.jpg";
 import "../styles/cardPage.css";
 
