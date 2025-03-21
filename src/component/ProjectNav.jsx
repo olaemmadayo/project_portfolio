@@ -53,7 +53,7 @@ const ProjectNav = () => {
         </Link>
         <Link to="/card-page" className='item'>
         <FaPassport className="fa-icon"/>
-          Card Props
+          Card 
         </Link>
 
 
