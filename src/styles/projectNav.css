@@ -1,20 +1,24 @@
 body {
   font-family: Arial, sans-serif;
+  
 }
 
+/* Navigation Styling */
 .project--nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px 20px;
-  height: 100vh;
+  min-height: 95vh;
+  border-radius: 5px;
   background-color: hsla(0, 0%, 81%, 0.986);
 }
 
+/* Heading */
 .nav-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ✅ Fixed */
+  align-items: center;
   margin-top: 20px;
   gap: 20px;
 }
@@ -39,6 +43,7 @@ body {
   height: 35px;
 }
 
+/* Project Links */
 .project-links {
   margin-top: 50px;
   display: flex;
@@ -69,33 +74,109 @@ body {
   background-color: hsl(210, 100%, 40%);
 }
 
-@media only screen and (max-width: 480px) {
+/* Responsive Design */
+@media (max-width: 1024px) {
   .project--nav {
-    padding: 2px 5px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .nav-heading {
+    gap: 15px;
+  }
+
+  .heading-font {
+    font-size: 1.6rem;
+  }
+
+  .techlogo {
+    width: 40px;
+    height: 30px;
+  }
+
+  .project-links {
+    margin-top: 30px;
+    gap: 15px;
+  }
+
+  .project-links .item {
+    font-size: 1.2rem;
+    padding: 5px 8px;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project--nav {
+    height: auto;
     width: 100%;
+    padding: 15px;
+  }
+
+  .nav-heading {
+    gap: 10px;
+  }
+
+  .heading-font {
+    font-size: 1.4rem;
+  }
+
+  .techlogo {
+    width: 35px;
+    height: 25px;
+  }
+
+  .project-links {
+    margin-top: 20px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .project-links .item {
+    font-size: 1.1rem;
+    padding: 4px 6px;
+    min-width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project--nav {
+    padding: 10px;
+    width: 100%;
     height: auto;
   }
+
   .nav-heading {
     gap: 5px;
+    flex-direction: column;
+    align-items: center;
   }
+
   .heading-font {
     font-size: 1.2rem;
+    text-align: center;
   }
+
   .techlogo {
-    width: 20px;
-    height: 15px;
+    width: 25px;
+    height: 20px;
   }
+
   .project-links {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
+    justify-content: center;
   }
+
   .project-links .item {
     font-size: 1rem;
-    padding: 2px 4px;
-    min-width: 70px; /* ✅ Fixed space issue */
+    padding: 3px 5px;
+    min-width: 75px;
   }
 }

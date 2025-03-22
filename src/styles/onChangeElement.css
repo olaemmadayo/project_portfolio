@@ -1,45 +1,86 @@
-.form--page{
+/* Form Page */
+.form--page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  background-color: #f4f4f4;  
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 100%;
 }
-.form--page h1{
+
+/* Form Heading */
+.form--page h1 {
   color: #666;
   font-size: 1.9rem;
   margin-bottom: 10px;
 }
-.form--input{
+
+/* Input Fields */
+.form--input, .form--label--input, .form-select {
   font-size: 1.4rem;
   padding: 10px;
+  width: 100%;
+  max-width: 400px;
   border: 2px solid hsl(0, 0%, 80%, 0.5);
   border-radius: 5px;
   color: hsl(0, 0%, 0%, 0.5);
   margin-bottom: 10px;
 }
-.form--page p{
+
+/* Paragraph Text */
+.form--page p {
   color: #666;
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.form-select{
-  color: #666;
-  font-size: 1.2rem;
-  border: 2px solid hsl(0, 0%, 80%, 0.5);
-  border-radius: 5px;
-  margin-bottom: 10px;
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .form--page {
+    padding: 15px;
+  }
+  
+  .form--page h1 {
+    font-size: 1.7rem;
+  }
+
+  .form--input, .form--label--input, .form-select {
+    font-size: 1.3rem;
+    max-width: 350px;
+  }
 }
-.form--label--input{
-  font-size: 1.4rem;
-  padding: 10px;
-  border: 2px solid hsl(0, 0%, 80%, 0.5);
-  border-radius: 5px;
-  color: hsl(0, 0%, 0%, 0.5);
-  margin-bottom: 10px;
-  
-  
+
+@media (max-width: 768px) {
+  .form--page {
+    padding: 10px;
+  }
+
+  .form--page h1 {
+    font-size: 1.5rem;
+  }
+
+  .form--input, .form--label--input, .form-select {
+    font-size: 1.2rem;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form--page {
+    padding: 5px;
+  }
+
+  .form--page h1 {
+    font-size: 1.4rem;
+  }
+
+  .form--input, .form--label--input, .form-select {
+    font-size: 1.1rem;
+    padding: 8px;
+    max-width: 280px;
+  }
 }

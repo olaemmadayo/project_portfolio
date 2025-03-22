@@ -1,43 +1,116 @@
-body{
+/* General Styles */
+body {
   font-family: Arial, sans-serif;
 }
-.color-picker-container{
+
+/* Color Picker Container */
+.color-picker-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
   text-align: center;
-  background-color: #f4f4f4;  
+  background-color: #f4f4f4;
+  padding: 20px;
+  
 }
-.color-display{
+
+/* Color Display Box */
+.color-display {
   width: 200px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 5px solid hsl(0, 0%, 80%);
-  border-radius: 25px ;
+  border-radius: 25px;
   margin-bottom: 25px;
-  transition: 0.25s ease;
-
+  transition: 0.25s ease-in-out;
 }
 
-.color-display p{
+/* Color Display Text */
+.color-display p {
   color: hsl(0, 0%, 20%);
   font-size: 2rem;
   text-align: center;
+  
 }
 
-label{
+/* Label */
+label {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
-input[type="color"]{
+
+/* Color Picker Input */
+input[type="color"] {
   width: 75px;
   height: 50px;
-  padding:5px;
+  padding: 5px;
   border-radius: 10px;
-  border:3px solid hsl(0, 0% 80%) ;
+  border: 3px solid hsl(0, 0%, 80%);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .color-display {
+    width: 180px;
+    height: 180px;
+  }
+
+  .color-display p {
+    font-size: 1.8rem;
+  }
+
+  input[type="color"] {
+    width: 70px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .color-display {
+    width: 160px;
+    height: 160px;
+  }
+
+  .color-display p {
+    font-size: 1.6rem;
+  }
+
+  label {
+    font-size: 1.3rem;
+  }
+
+  input[type="color"] {
+    width: 65px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .color-picker-container {
+    padding: 10px;
+  }
+
+  .color-display {
+    width: 140px;
+    height: 140px;
+  }
+
+  .color-display p {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  input[type="color"] {
+    width: 60px;
+    height: 35px;
+  }
 }

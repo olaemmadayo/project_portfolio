@@ -1,12 +1,26 @@
-.to-do-list{
+.to-do-list {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin-top: 100px;
+  
+  /* padding: 20px; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f4f4f4;
+  
+  
 }
-h1{
+
+h1 {
   font-size: 4rem;
 }
-button{
+
+/* Button Styling */
+button {
   font-size: 1.7rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -16,51 +30,147 @@ button{
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
-.add-button{
+
+.add-button {
   background-color: hsl(125, 47%, 54%);
 }
-.add-button:hover{
+
+.add-button:hover {
   background-color: hsl(125, 47%, 44%);
 }
-.delete-button{
+
+.delete-button {
   background-color: hsl(10, 90%, 50%);
 }
-.delete-button:hover{
+
+.delete-button:hover {
   background-color: hsl(10, 90%, 40%);
 }
-.move-button{
+
+.move-button {
   background-color: hsl(207, 90%, 64%);
 }
-.move-button:hover{
+
+.move-button:hover {
   background-color: hsl(207, 90%, 54%);
 }
 
-input[type="text"]{
+/* Input Field */
+input[type="text"] {
   font-size: 1.6rem;
   padding: 10px;
-  border: 2px solid hsl(0, 0%, 80%, 0.5);
+  border: 2px solid hsl(0, 0%, 80%);
   border-radius: 5px;
-  color: hsl(0, 0%, 0%, 0.5);
+  width: 100%;
+  max-width: 400px;
 }
-ol{
+
+/* List Styling */
+ol {
   padding: 0;
 }
-li{
+
+li {
   font-size: 2rem;
   font-weight: bold;
   padding: 15px;
   background-color: hsl(0, 0%, 97%);
   margin-bottom: 10px;
-  border: 3px solid hsl(0, 0%, 85%, 0.75);
+  border: 3px solid hsl(0, 0%, 85%);
   border-radius: 5px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
-.text{
+
+.text {
   flex: 1;
 }
-.delete-button, .move-button{
+
+.delete-button, .move-button {
   padding: 8px 12px;
   font-size: 1.4rem;
   margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 8px 16px;
+  }
+  
+  li {
+    font-size: 1.8rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  input[type="text"] {
+    font-size: 1.4rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 1.4rem;
+    padding: 8px 14px;
+  }
+
+  li {
+    font-size: 1.6rem;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .delete-button, .move-button {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .to-do-list {
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 1.2rem;
+    padding: 6px;
+    width: 100%;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 6px 12px;
+  }
+
+  li {
+    font-size: 1.4rem;
+    padding: 8px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .delete-button, .move-button {
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    margin-top: 8px;
+    width: 100%;
+  }
 }

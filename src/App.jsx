@@ -28,7 +28,6 @@ const App = () => {
               <Route path="/" element={<WelcomePage/>} />
               <Route path="/todo-list" element={<TodoList/>} />
               <Route path="color-picker" element={<ColorPicker/>} />
-              <Route path="counter" element={<Counter/>} />
               <Route path="digital-time" element={<DigitalClock/>} />
               <Route path="window-resize" element={<WindowResize/>} />
               <Route path="stop-watch" element={<StopWatch/>} />

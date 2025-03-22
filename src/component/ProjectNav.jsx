@@ -27,17 +27,13 @@ const ProjectNav = () => {
           Color Picker
         </Link>
 
-        <Link to="/counter" className='item'> <FaCalculator className="fa-icon"/>
-          Counter   
-        </Link>
-
         <Link to="/digital-time" className='item'>
         <FaClock className="fa-icon"/>
           Digital Clock
         </Link>
         <Link to="/window-resize" className='item'>
         <FaWeight className="fa-icon"/>
-          Window Resize
+          Screen size
         </Link>
         <Link to="/stop-watch" className='item'>
         <FaClock className="fa-icon"/>

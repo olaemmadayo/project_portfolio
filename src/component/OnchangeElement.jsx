@@ -47,14 +47,14 @@ function OnchangeElement(){
       </select>
       <p>Payment: {payment}</p>
 
-      <label className="form--label--input" >
+      <label  >
           <input  type="radio" value="Pick Up" 
                   checked={shipping === "Pick Up"}
                   onChange={handleShippingChange}/>
           Pick Up
       </label> <br />
-      <label className="form--label--input">
-          <input className="form--label--input" type="radio" value="Delivery" 
+      <label >
+          <input type="radio" value="Delivery" 
                   checked={shipping === "Delivery"}
                   onChange={handleShippingChange}/>
           Delivery

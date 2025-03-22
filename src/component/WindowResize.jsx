@@ -1,5 +1,6 @@
 // useEffect(function, [dependecies])
 import React, {useState, useEffect} from 'react'
+import "../styles/windowResize.css"
 
 const WindowResize = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -24,8 +25,8 @@ const WindowResize = () => {
   }
 
   return (
-    <div>
-      <p>Window WIdth: {width}px</p>
+    <div className='window-resize-rap'>
+      <p>Window Width: {width}px</p>
       <p>Window height: {height}px</p>
     </div>
   )
